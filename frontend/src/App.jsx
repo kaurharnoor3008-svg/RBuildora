@@ -624,7 +624,7 @@ Rough notes from the candidate: ${exp.bullets || "none — write generic strong 
               <div>
                 <div className="flex items-center justify-between mb-5">
                   <SectionTitle icon={Award}>Skills</SectionTitle>
-                  <div className="-mt-5"><AiButton onClick={suggestSkills} loading={!!aiLoading.skills} label="Suggest skills" /></div>
+                  <div className="-mt-5"><AiButton onClick={suggestSkills} loading={!!aiLoading.skills} label=" AI Coming Soon" /></div>
                 </div>
                 <Field label="Add a skill">
                   <div className="flex gap-2">
