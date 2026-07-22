@@ -65,7 +65,7 @@ const STEPS = [
 
 // ---------- Claude API helper (via our backend, so the API key stays server-side) ----------
 async function askClaude(systemPrompt, userPrompt) {
-  const response = await fetch("/api/ai/complete", {
+  const response = await fetch("https://rbuildora.onrender.com", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ system: systemPrompt, user: userPrompt })
