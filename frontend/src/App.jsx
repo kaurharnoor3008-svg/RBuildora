@@ -118,7 +118,7 @@ function TextArea({ onFocus, onBlur, ...props }) {
   );
 }
 
-function AiButton({ onClick, loading, label = "Polish with AI" }) {
+function AiButton({ onClick, loading, label = "AI Coming Soon" }) {
   return (
     <button
       type="button"
@@ -470,7 +470,7 @@ Rough notes from the candidate: ${exp.bullets || "none — write generic strong 
                     placeholder="e.g. 3 years building React apps, like solving UI problems, looking to grow into a senior role..."
                   />
                 </Field>
-                <AiButton onClick={polishSummary} loading={!!aiLoading.summary} label="Polish summary with AI" />
+                <AiButton onClick={polishSummary} loading={!!aiLoading.summary} label="AI Coming Soon" />
               </div>
             )}
 
@@ -528,7 +528,7 @@ Rough notes from the candidate: ${exp.bullets || "none — write generic strong 
                         placeholder="built dashboards in react, worked with backend team on api, fixed bugs, mentored 2 interns"
                       />
                     </Field>
-                    <AiButton onClick={() => polishBullets(exp)} loading={!!aiLoading["exp-" + exp.id]} label="Turn into bullet points" />
+                    <AiButton onClick={() => polishBullets(exp)} loading={!!aiLoading["exp-" + exp.id]} label="AI Coming Soon" />
                   </div>
                 ))}
                 <button onClick={() => addToList("experience", emptyExperience)} className="flex items-center gap-1.5 text-sm font-semibold" style={{ color: STEEL }}>
